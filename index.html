@@ -7,30 +7,44 @@
         <meta name="description" content="Curriculum Vitae de Angello Vasconez, estudiante de Ingeniería en Computación.">
         <meta name="keywords" content="Curriculum Vitae, cv, CV, Angello Vasconez, Ingeniería en Computación, ESPOL">
         <meta name="author" content="Angello Vasconez">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="./stylesheets/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
         <title>Curriculum Vitae</title>
         
     </head>
 
     <body>
-
         <header>
-                <h1>Angello Vasconez</h1>
-                <p>Estudiante de Ingeniería en Computación | alvascon@espol.edu.ec | +593960511029</p>       
+                <h1> Angello Vasconez </h1>
         </header>
 
         <nav>
             <ul>
+                <li><a href="#Perfil">Perfil</a></li>
                 <li><a href="#Resumen">Resumen</a></li>
                 <li><a href="#Educación">Educación</a></li>
                 <li><a href="#Proyectos">Proyectos</a></li>
                 <li><a href="#Habilidades">Habilidades</a></li>
-            </ul>
+                <li><a href="#Contacto">Contacto</a></li>
+                <li><a href="#Referencias">Referencias</a></li>
+            <ul>
         </nav>
-
+        
         <main>
+            <section id="Perfil">
+                <h2 class="subtitle">Perfil</h2>
+                <img id="photo" src="https://placehold.co/200" alt="Foto de perfil">
+                <p>Estudiante de Ingeniería en Computación</p>       
+                <p>Correo: alvascon@espol.edu.ec </p>       
+                <p>Número de telf: +593960511029</p>       
+                <p>Guayaquil, Ecuador</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15948.072679096078!2d-79.96063989078365!3d-2.1467287156778623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sec!4v1747680974815!5m2!1ses-419!2sec" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+
             <section id="Resumen">
-                <h2>Resumen</h2>
+                <h2 class="subtitle">Resumen</h2>
                 <p>Estudiante de Ingeniería en Computación con sólida formación en desarrollo de software,
                 estructuras de datos y sistemas operativos. Apasionado por la tecnología y la resolución
                 de problemas, con experiencia en proyectos personales que incluyen desarrollo de
@@ -41,34 +55,47 @@
             </section>
 
             <section id="Educación">
-                <h2>Educación</h2>
+                <h2 class="subtitle">Educación</h2>
                 <p><b>Ingeniería en Computación</b></p>
                 <p>Escuela Superior Politécnica del Litoral (ESPOL)</p>
                 <p>Guayaquil, Ecuador</p>
                 <p>Fecha de inicio: 2022</p>
                 <p>Fecha de finalización: 2026</p>
+
             </section>
 
             <section id="Proyectos">
-                <h2>Proyectos</h2>
-                <p><b>Proyecto 1: Proyecto-Airbnb</b></p>
-                <p>Proyecto de practica de crear un sistema de reservas de alojamientos sin interfaz grafica.</p>
-                
-                <p><b>Proyecto 2: Proyecto-MatDiscretas</b></p>
-                <p>
-                    Representación gráfica del funcionamiento del algoritmo
-                    de Floyd-Warshall usando grafos en aplicaciones de
-                    geolocalización (tipo Waza o Google Maps) para 
-                    hallar el camino mas corto entre dos puntos.
-                </p>
-                
-                <p><b>Proyecto 3: Grupo-11</b></p>
-                <p>Interfaz gráfica de un catalogo de vehiculos.</p>
+                <h2 class="subtitle">Proyectos</h2>
+                <table>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Descripción</th>
+                        <th>Estado</th>
+                    </tr>
+                    <tr>
+                        <td>Airbnb</td>
+                        <td>Proyecto de practica de crear un sistema de reservas de alojamientos sin interfaz grafica.</td>
+                        <td>Terminado</td>
+                    </tr>
+                    <tr>
+                        <td>algoritmo Floyd-Warshall</td>
+                        <td>Representación gráfica del funcionamiento del algoritmo
+                            de Floyd-Warshall usando grafos en aplicaciones de
+                            geolocalización (tipo Waza o Google Maps) para 
+                            hallar el camino mas corto entre dos puntos.</td>
+                        <td>Terminado</td>
+                    </tr>
+                    <tr>
+                        <td>Catalogo Vehiculos</td>
+                        <td>Interfaz gráfica de un catalogo de vehiculos.</td>
+                        <td>Terminado</td>
+                    </tr>
+                </table>
                 
             </section>
 
             <section id="Habilidades">
-                <h2>Habilidades</h2>
+                <h2 class="subtitle">Habilidades</h2>
                 <ul>
                     <li>Lenguajes de programación: Python, Java</li>
                     <li>Desarrollo web: HTML, CSS, JavaScript</li>
@@ -76,14 +103,82 @@
                     <li>Control de versiones: Git, GitHub</li>
                 </ul>
             </section>    
+       
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/v6kEanzJhpg?si=bC77sPZBHLltkxb9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            
+            <section id="Contacto">
+                <form action="#" method="post">
+                    <h3>Formulario de contacto</h3>
+                    <label for="email">
+                        Ingrese su correo para estar en contacto con usted:
+                        <input type="email" id="email" name="email" required>
+                    </label>
+                    <br>
+
+                    <label for="motivo">
+                        Motivo:
+                        <select name="motivo" required>
+                            <option value="consulta">Consulta</option>
+                            <option value="colaboracion">Colaboración</option>
+                            <option value="trabajo">Oportunidad laboral</option>
+                        </select>
+                    </label>
+                    <br>
+                    <fieldset>
+                        <legend>Area de interes</legend>
+                        <label for="interes-frontend">
+                            <input type="radio" id="interes-frontend" name="interes" value="frontend">
+                            Frontend
+                        </label>
+                        <label for="interes-backend">
+                            <input type="radio" id="interes-backend" name="interes" value="backend">
+                            Backend
+                        </label>
+                    </fieldset>
+                    <label for="mensaje">
+                        Mensaje:
+                        <textarea id="mensaje" name="mensaje" required></textarea>
+                    </label>
+                    <br>
+
+                    <button type="submit">Enviar</button>   
+                </form>
+            </section>
+            
+            <section id="Referencias">
+                <h2 class="subtitle">Referencias</h2>
+                <article>
+                    <blockquote>
+                        "Angello demostró gran responsabilidad y proactividad en el desarrollo de scripts automatizados para nuestro laboratorio."
+                        <p><span>Ing. María Torres</span>
+                        Profesora de Laboratorio de Computación, ESPOL<br>
+                        María fue tutora de Angello en proyectos de automatización y destaca su capacidad para resolver problemas técnicos de manera eficiente.</p>
+                    </blockquote>
+                </article>
+                <article>
+                    <blockquote>
+                        "Su colaboración en el desarrollo de la página web del club estudiantil fue fundamental para cumplir los plazos y lograr un diseño moderno."
+                        <p><span>Juan Pérez</span>
+                        Presidente del Club de Programación, ESPOL<br>
+                        Juan trabajó con Angello en la creación de sitios web y resalta su creatividad y compromiso con el trabajo en equipo.</p>
+                    </blockquote>
+                </article>
+                <article>
+                    <blockquote>
+                        "Angello siempre mostró disposición para aprender y aportar ideas innovadoras en los proyectos grupales de la facultad."
+                        <p><span>Lucía Ramírez</span> 
+                        Compañera de equipo en proyectos universitarios<br>
+                        Lucía participó junto a Angello en varios proyectos académicos y destaca su actitud positiva y habilidades técnicas.</p>
+                    </blockquote>
+                </article>
+            </section>
 
         </main>
-       
     </body>
 
     <footer>
         <p>&copy; 2025 Angello Vasconez</p>
-        <a href="https://github.com/Alvasconv">GitHub</a>
-
-
+        <a href="https://github.com/Alvasconv"><img src="./multimedia/github-mark.png" width="15" height="15">github</a>
+    </footer>
+        
 </html>
